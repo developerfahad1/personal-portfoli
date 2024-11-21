@@ -61,7 +61,6 @@ ul li a{
     justify-content: center;
     align-items: center;
     margin-top: 150px;
-    position: fixed;
 }
 
 .mainText h1{
@@ -116,7 +115,6 @@ button:hover{
     align-items: center;
     background-color: rgb(24, 24, 24);
     padding: 52px;
-    position: fixed;
 }
 
 .about img{
@@ -245,7 +243,6 @@ button:hover{
     padding: 55px;
     margin-top: 66px;
     background-color: rgb(45, 45, 45);
-    position: fixed;
 }
 
 .text p{
