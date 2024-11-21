@@ -1,0 +1,310 @@
+/* General Reset */
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(9, 9, 9);
+    color: white;
+}
+
+/* Navbar styling */
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 22px;
+    background-color: rgb(9, 9, 9);
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+   
+}
+
+ul li a:hover{
+    color: rgb(0, 153, 225);
+    border-bottom: 2px solid  rgb(0, 153, 225);;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    margin-inline: 22px;
+}
+
+#bar{
+    display: none;
+}
+
+.logo{
+    font-size: 22px;
+    color: rgb(0, 153, 225);
+}
+
+/* main section css style  */
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.mainText h1{
+    font-size: 50px;
+    margin-top: 5px;
+}
+
+.mainText h1 span{
+    color: rgb(0, 153, 225);
+}
+
+.mainText h3 {
+    font-size: 30px;
+}
+
+.mainText p{
+    font-size: 30px;
+    
+}
+
+.mainText button{
+    width: 140px;
+    height: 40px;
+    background-color: rgb(0, 153, 225);
+    font-size: 19px;
+    border: none;
+    margin-top: 24px;
+    color: white;
+}
+
+button:hover{
+    border: 2px solid black;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* about section css style  */
+
+.head{
+    text-align: center;
+    padding: 80px;
+}
+
+.head span{
+    color: rgb(0, 153, 225);
+}
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+    padding: 52px;
+}
+
+.about img{
+    width: 250px;
+    height: 240px;
+    border-radius: 50%;
+    border: 4px solid rgb(0, 153, 225); 
+    margin-inline: 65px;
+  
+}
+
+.aboutText p{
+    margin-top: 22px;
+}
+
+.aboutText h2 span{
+    color: rgb(0, 153, 225); 
+}
+
+.aboutText p span{
+    color: rgb(165, 165, 165);
+}
+
+.aboutText h2{
+    font-size: 30px;
+}
+
+/* service section css style  */
+
+.service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.card{
+    width: 270px;
+    padding: 22px;
+    background-color: rgb(21, 20, 20);
+    margin-inline: 20px;
+    border-radius: 5px;
+    margin-top: 22px;
+}
+
+.card p{
+    margin-top: 11px;
+}
+
+.card i{
+    font-size: 22px;
+}
+
+/* work section css style  */
+
+.myWork{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.workCard{
+    width: 300px;
+    height: 320px;
+    background-color: rgb(21, 20, 20);
+    border-radius: 5px;
+    margin-inline: 20px;
+    padding: 11px;
+    margin-top: 22px;
+}
+
+.workCard img{
+    width: 100%;
+    height: 200px;
+}
+
+.workCard p{
+    margin-top: 11px;
+
+}
+.workCard a{
+    text-decoration: none;
+    position: absolute;
+    margin-top: 20px;
+    padding: 6px 12px;
+    background-color:  rgb(0, 153, 225);
+    color: white;
+}
+
+.contact {
+    width: 300px;
+    padding: 20px;
+    background-color: rgb(24, 24, 24); 
+    margin: auto;
+
+}
+
+.contact input{
+    width: 90%;
+    padding: 5px;
+    font-size: 17px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    margin-top: 3px;
+}
+
+.contact p{
+    margin-top: 20px;
+}
+
+.contact button{
+    width: 90px;
+    height: 28px;
+    background-color:  rgb(0, 153, 225);
+    color: white;
+    font-size: 17px;
+    border: none;
+    margin-top: 22px;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 55px;
+    margin-top: 66px;
+    background-color: rgb(45, 45, 45);
+}
+
+.text p{
+    margin-top: 13px;
+}
+
+.text h2{
+ color: rgb(0, 153, 225); 
+}
+
+
+@media screen and (max-width:1000px){
+    .main{
+        display: block;
+        text-align: center;
+        margin-top: 155px;
+    }
+}
+
+@media screen and (max-width:800px){
+    ul{
+        display: none;
+    }
+    .showData{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 23px;
+        background-color: rgb(120, 119, 119);
+        gap: 20px;
+        border-radius: 5px;
+        position: fixed;
+        top: 75px;
+        right: 3%;
+    }
+    #bar{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:550px){
+    .mainText h1{
+        font-size: 30px;
+    }
+    .mainText span{
+        font-size: 30px;
+    }
+    .mainText h3{
+        font-size: 26px;
+    }
+    .mainText p{
+        font-size: 20px;
+    }
+    .mainText img{
+        width: 90%;
+    }
+    .contact{
+        width: 80%;
+    }
+}
+
+
+
