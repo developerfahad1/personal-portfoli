@@ -10,11 +10,15 @@ submit.addEventListener('click', function(){
     
     let email = document.getElementById('email');
     let pass = document.getElementById('pass');
+    let msg = document.getElementById('msg');
 
-    if(email.value == "" && pass.value == ""){
+    if(email.value == "" && pass.value == "" && msg.value == ""){
         alert('Fill Detail')
     }else{
         alert('Logged IN')
+        email.value = "";
+        pass.value = "";
+        msg.value = "";
     }
 
 })
